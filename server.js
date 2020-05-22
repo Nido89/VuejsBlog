@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 
 // starting a new express app
@@ -28,6 +29,7 @@ const PostModel = mongoose.model("post",PostSchema);
 
 
 // creating a Middleware for nodejs
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 

@@ -4,11 +4,12 @@
   "description": "A VueJS with NodeJs server and MongoDB",
   "main": "server.js",
   "scripts": {
-    "dev":"nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "author": "JalalNido syednaveedjalal@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.9.13"
   },
